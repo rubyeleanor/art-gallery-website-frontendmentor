@@ -1,0 +1,120 @@
+@use 'sass:math';
+
+@function rem($pixel) {
+    @if math.is-unitless($pixel) {
+        @return math.div($pixel, 16)+rem;
+    }
+
+    @else {
+        @error 'Don\'t use units when using the rem() function; only numbers.';
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'big shoulders display', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: rem(60);
+    line-height: rem(55);
+
+    @media screen and (min-width: 48rem) {
+        font-size: rem(70);
+        line-height: rem(65);
+    }
+}
+
+h2 {
+    font-size: rem(50);
+    line-height: rem(45);
+}
+
+.location h2 {
+    margin-bottom: 48px;
+
+    @media screen and (min-width:48rem) {
+        margin-bottom: 0;
+    }
+}
+
+h3 {
+    font-size: rem(32);
+    line-height: rem(32);
+    color: var(--beige);
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'outfit', sans-serif;
+    font-weight: 300;
+    font-size: rem(18);
+    line-height: rem(28);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-address p {
+    font-size: rem(16);
+    line-height: rem(26);
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: var(--white);
+}
+
+//buttons
+
+.loc-button {
+    display: flex;
+    width: rem(260);
+    height: rem(72);
+
+    @media screen and (min-width:48rem) {
+        margin-left: 39px;
+    }
+}
+
+.link {
+    background-color: var(--almost-black);
+    font-family: 'big shoulders display', sans-serif;
+    font-weight: 800;
+    font-size: rem(20);
+    letter-spacing: rem(3.64);
+    text-transform: uppercase;
+    color: var(--white);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link:hover {
+    background-color: var(--beige);
+}
+
+.link:hover .arrow {
+    background-color: var(--almost-black);
+}
+
+.link-text {
+    text-align: center;
+    width: rem(206);
+}
+
+.arrow {
+    background-color: var(--beige);
+    width: rem(56);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
