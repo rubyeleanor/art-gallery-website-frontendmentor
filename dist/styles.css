@@ -346,6 +346,7 @@ footer {
 @media screen and (min-width: 48rem) {
   .loc-hero {
     height: 600px;
+    background-image: url("../starter-code/assets/tablet/image-map@2x.png");
   }
 }
 
