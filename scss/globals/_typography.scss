@@ -28,11 +28,24 @@ h1 {
         font-size: rem(70);
         line-height: rem(65);
     }
+
+    @media screen and (min-width: 80rem) {
+        color: white;
+        font-size: rem(96);
+        line-height: rem(88);
+        mix-blend-mode: difference;
+    }
 }
 
 h2 {
     font-size: rem(50);
     line-height: rem(45);
+
+    @media screen and (min-width: 80rem) {
+        font-size: rem(60);
+        line-height: rem(60);
+
+    }
 }
 
 .location h2 {
@@ -57,11 +70,21 @@ p {
     line-height: rem(28);
     margin-top: 0;
     margin-bottom: 0;
+
+    @media screen and (min-width: 80rem) {
+        font-size: rem(22);
+        line-height: rem(32);
+    }
 }
 
 .footer-address p {
     font-size: rem(16);
     line-height: rem(26);
+
+    @media screen and (min-width: 80rem) {
+        font-size: rem(18);
+        line-height: rem(28);
+    }
 }
 
 a,
@@ -78,8 +101,15 @@ a:active {
     width: rem(260);
     height: rem(72);
 
+}
+
+.p2-button {
     @media screen and (min-width:48rem) {
         margin-left: 39px;
+    }
+
+    @media screen and (min-width: 80rem) {
+        margin-left: 156px;
     }
 }
 
