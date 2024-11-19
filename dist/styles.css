@@ -61,6 +61,12 @@ h1 {
     line-height: 4.375rem;
   }
 }
+@media screen and (min-width: 106rem) {
+  .location h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
 
 h2 {
   font-size: 3.125rem;
@@ -70,6 +76,12 @@ h2 {
   h2 {
     font-size: 3.75rem;
     line-height: 3.75rem;
+  }
+}
+@media screen and (min-width: 106rem) {
+  h2 {
+    font-size: 4.375rem;
+    line-height: 4.375rem;
   }
 }
 
@@ -83,6 +95,12 @@ h2 {
   .loc-content h2 {
     font-size: 2.25rem;
     line-height: 2.25rem;
+  }
+}
+@media screen and (min-width: 106rem) {
+  .loc-content h2 {
+    font-size: 3rem;
+    line-height: 3rem;
   }
 }
 
@@ -445,6 +463,12 @@ body {
     padding: 65px 48px;
   }
 }
+@media screen and (min-width: 106rem) {
+  .text-2 {
+    padding-right: 140px;
+    padding-left: 65px;
+  }
+}
 
 @media screen and (min-width: 80rem) {
   .text-2 h2 {
@@ -540,7 +564,13 @@ footer {
   .loc-hero {
     background-image: url("../starter-code/assets/desktop/image-map@2x.png");
     background-size: cover;
+    background-position: center;
     max-width: 120rem;
+  }
+}
+@media screen and (min-width: 106rem) {
+  .loc-hero {
+    height: 56.25rem;
   }
 }
 
@@ -582,4 +612,6 @@ footer {
 .loc-footer {
   background-color: var(--beige);
   color: var(--almost-black);
+  margin: auto;
+  max-width: 120rem;
 }/*# sourceMappingURL=styles.css.map */
