@@ -37,6 +37,23 @@ h1 {
     }
 }
 
+.location h1 {
+    margin-bottom: 48px;
+    font-size: rem(50);
+    line-height: rem(45);
+
+    @media screen and (min-width:48rem) {
+        margin-bottom: 0;
+        font-size: rem(55);
+        line-height: rem(50);
+    }
+
+    @media screen and (min-width: 80rem) {
+        font-size: rem(70);
+        line-height: rem(70);
+    }
+}
+
 h2 {
     font-size: rem(50);
     line-height: rem(45);
@@ -48,19 +65,18 @@ h2 {
     }
 }
 
-.location h2 {
-    margin-bottom: 48px;
 
-    @media screen and (min-width:48rem) {
-        margin-bottom: 0;
-    }
-}
 
-h3 {
+.loc-content h2 {
     font-size: rem(32);
     line-height: rem(32);
     color: var(--beige);
     margin-bottom: 20px;
+
+    @media screen and (min-width: 80rem) {
+        font-size: rem(36);
+        line-height: rem(36);
+    }
 }
 
 p {
